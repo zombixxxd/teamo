@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feliz Aniversario mi amorcito 💖</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffeef0;
+      font-family: 'Comic Sans MS', cursive;
+      text-align: center;
+      color: #d6336c;
+    }
+
+    h1 {
+      margin-top: 40px;
+      font-size: 2.5em;
+    }
+
+    .letter {
+      background: white;
+      border-radius: 15px;
+      margin: 20px auto;
+      padding: 20px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .heart-img {
+      width: 100px;
+      height: 100px;
+      margin: 40px auto;
+      display: block;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .heart-img:hover {
+      transform: scale(1.1);
+    }
+
+    .hidden-message {
+      display: none;
+      font-size: 1.2em;
+      margin-top: 20px;
+      background-color: #fff0f3;
+      padding: 15px;
+      border-radius: 10px;
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .flower-button {
+      padding: 10px 20px;
+      background-color: #ffd700;
+      border: none;
+      border-radius: 10px;
+      color: #d6336c;
+      font-size: 1em;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      margin-top: 15px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <h1>💌 Para mi amorcito</h1>
+
+  <div class="letter">
+    <p>Hoy celebramos 1 año y 6 meses juntos 🥰</p>
+    <p>Esta fecha es muy importante para mí :) así como lo eres tú, mi amor. No sabes cuánto agradezco tenerte en mi vida, a pesar de que no estemos juntos.
+Aun así, cada día me enamoro más de ti, mi niña hermosa. ¿Por qué hermosa?, dirás. Porque lo eres, mi amor, aunque siempre me digas que no, yo digo lo contrario, mi amorcito.
+Ante mis ojos tú eres perfecta, mi amor. No quiero a nadie más que a ti, mi amor. Te amo mucho y lo tienes presente todos los días. Quisiera poder estar a tu lado todos los días para poder darte muchos besitos y abrazos.
+Si no fuera por la distancia, me saldría un rato de clases para poder ir a verte, mi amor. Te extraño mucho, mucho. No tengo nada más que decir porque siento que llenarte de palabras bonitas no es mi estilo; prefiero darte besitos :3</p>
+    <p>Eres mi persona favorita, mi apoyo, mi alegría diaria. Gracias por cada momento juntos 💖</p>
+  </div>
+
+  <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png"
+       alt="Corazón"
+       class="heart-img"
+       onclick="showMessage()" />
+
+  <div id="secret" class="hidden-message">
+    ¡Sorpresa! <br />
+    Ya que no te los puedo mandar al menos los puedes tener por aquí, mi amor :3 <br />
+    ¡Feliz 1 año y medio, mi vida! ❤️
+    <br><br>
+    <a href="floresamarillas_con_musica.html" target="_blank">
+      <button class="flower-button">Un regalito para ti amor :3</button>
+    </a>
+  </div>
+
+  <footer>
+    Hecho en HTML y con mucho amor por tu programador favorito 💻
+  </footer>
+
+  <script>
+    function showMessage() {
+      const message = document.getElementById('secret');
+      message.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
